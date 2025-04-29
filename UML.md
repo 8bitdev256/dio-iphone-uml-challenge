@@ -3,24 +3,27 @@
 ```mermaid
 classDiagram
     class MusicPlayer {
-        +method1()
-        +method2(String example)
+        +ring()
+        +pause()
+        +selectMusic(String music)
     }
 
     class Phone {
-        +method1()
-        +method2(String example)
+        +answer()
+        +startVoiceMail()
+        +call(String phoneNumber)
     }
 
     class WebBrowser {
-        +method1()
-        +method2(String example)
+        +newTab()
+        +refreshPage()
+        +goTo(String url)
     }
 
     class iPhone {
     }
 
-    iPhone --> MusicPlayer
-    iPhone --> Phone
-    iPhone --> WebBrowser
+    MusicPlayer --> iPhone
+    Phone --> iPhone
+    WebBrowser --> iPhone
 ```
