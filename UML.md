@@ -3,7 +3,7 @@
 ```mermaid
 classDiagram
     class MusicPlayer {
-        +ring()
+        +play()
         +pause()
         +selectMusic(String music)
     }
