@@ -1,5 +1,7 @@
 package com.iphone.model;
 
+import java.util.Random;
+
 public class IPhone implements Phone, WebBrowser, MusicPlayer {
 
     @Override
@@ -45,7 +47,17 @@ public class IPhone implements Phone, WebBrowser, MusicPlayer {
 
     @Override
     public void call(String phoneNumber) {
-        
+        int retries = 1;
+        boolean callAnswered;
+        Random rand = new Random();
+
+        do  {
+            System.out.println("Calling " + phoneNumber + ". Retries: " + retries);
+            callAnswered = rand.nextBoolean();
+            System.out.println("Call" + (callAnswered ? "" : " not") + " answered");
+            retries += 1;
+        }
+        while(callAnswered == false && retries <= 3);
     }
     
 }
