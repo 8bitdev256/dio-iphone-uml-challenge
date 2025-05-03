@@ -19,38 +19,33 @@ public class IPhone implements Phone, WebBrowser, MusicPlayer {
 
     @Override
     public void newTab() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'newTab'");
+        System.out.println("New tab opened");
     }
 
     @Override
     public void refreshPage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'refreshPage'");
+        System.out.println("Page reloaded");
     }
 
     @Override
     public void goTo(String url) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'goTo'");
+        newTab();
+        System.out.println("Page " + url + " loaded");
     }
 
     @Override
     public void answer() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'answer'");
+        System.out.println("Call answered");
     }
 
     @Override
     public void startVoiceMail() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'startVoiceMail'");
+        System.out.println("Voicemail started");
     }
 
     @Override
     public void call(String phoneNumber) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'call'");
+        
     }
     
 }
